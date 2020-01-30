@@ -1,0 +1,26 @@
+<div class="login-page container-fluid">
+  <div class="row align-items-center">
+    <div class="col-xs-12 col-sm-8 offset-sm-2 col-lg-6 offset-lg-3 col-xl-4 offset-xl-4">
+      <div class="login-form py-4 px-5">
+        <h3 class="pb-3 border-bottom">AGENCY LOGIN</h3>
+        <form class="needs-validation" #loginForm="ngForm" [class.was-validated]="!isFormValid" novalidate>
+          <div class="form-group">
+            <label for="username">Username  <span class="text-danger">*</span></label>
+            <input type="text" name="username" [(ngModel)]="loginDetails.username" class="form-control form-control-lg" required>
+            <div class="invalid-feedback">
+              Please enter username.
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="password">Password  <span class="text-danger">*</span></label>
+            <input type="password" name="password" [(ngModel)]="loginDetails.password" class="form-control form-control-lg" required>
+            <div class="invalid-feedback">
+              Please enter password.
+            </div>
+          </div>
+          <button type="submit" (click)="login($event)" class="btn bth-lg px-5 py-2 mt-2 btn-primary">Login</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
