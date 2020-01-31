@@ -1,0 +1,21 @@
+<!-- <div class="container">
+  <h2>Policy List</h2>
+  <table class="table table-bordered table-inverse">
+    <tr *ngFor="let policy of policies">
+      <td>
+        {{ policy.clientName }}
+      </td>
+    </tr>
+  </table>
+</div> -->
+<div class="wrapper">
+  <div class="sidebar" data-color="white" data-active-color="danger">
+    <app-sidebar></app-sidebar>
+  </div>
+  <div class="main-panel">
+    <app-navbar></app-navbar>
+    <div class="content">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>
