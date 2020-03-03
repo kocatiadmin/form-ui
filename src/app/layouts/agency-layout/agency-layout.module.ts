@@ -8,8 +8,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { AgencyDashboardComponent } from './pages/agency-dashboard/agency-dashboard.component';
 import { RouterModule } from '@angular/router';
 import { AgencyClientsComponent } from './pages/agency-clients/agency-clients.component';
-import { AgencyPoliciesComponent } from './pages/agency-policies/agency-policies.component';
 import { AddClientComponent } from './pages/add-client/add-client.component';
+import { ClientEmployeesComponent } from './pages/client-employees/client-employees.component';
 
 @NgModule({
   imports: [
@@ -22,7 +22,7 @@ import { AddClientComponent } from './pages/add-client/add-client.component';
   declarations: [
     AgencyDashboardComponent,
     AgencyClientsComponent,
-    AgencyPoliciesComponent,
+    ClientEmployeesComponent,
     AddClientComponent
   ]
 })

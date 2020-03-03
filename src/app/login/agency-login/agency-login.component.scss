@@ -1,11 +1,15 @@
 .login-page {
   height: 100vh;
   overflow: hidden;
-  background-color: #f4f3ef;
+	background-color: #f4f3ef;
+	padding-top: 5%;
+
+	img {
+		width: 150px;
+	}
 
   .login-form {
 		height: 400px;
-		margin-top: 20%;
 		background-color: #fff;
 		-webkit-box-shadow: 0px 1px 17px -8px rgba(0,0,0,0.57);
 		-moz-box-shadow: 0px 1px 17px -8px rgba(0,0,0,0.57);
