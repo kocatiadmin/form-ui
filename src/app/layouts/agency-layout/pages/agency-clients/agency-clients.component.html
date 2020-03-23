@@ -1,1 +1,11 @@
-<p>agency-clients works!</p>
+<div class="container-fluid">
+  <div class="row">
+    <button class="btn btn-dark px-4" [routerLink]="['./add']"><i class="fa fa-plus pr-2"></i>Add a Client</button>
+  </div>
+
+  <div class="row mt-3 pt-3 border-top custom-border">
+    <div class="col-md-12">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>

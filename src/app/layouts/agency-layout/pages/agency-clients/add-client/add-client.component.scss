@@ -1,0 +1,34 @@
+.add-client {
+  .close-icon {
+    font-size: 45px;
+    position: absolute;
+    right: 10px;
+    font-weight: 100;
+    top: 5px;
+  }
+
+  select {
+    height: 37px;
+  }
+
+  .policy-select {
+    padding-bottom: 0;
+
+    ::ng-deep {
+      .ui-multiselect {
+        width: 100%;
+        border: none;
+      }
+    }
+  }
+
+  ::ng-deep {
+    p-calendar {
+      .ui-inputtext {
+        border: 0;
+        background: transparent;
+        overflow: hidden;
+      }
+    }
+  }
+}

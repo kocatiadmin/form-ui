@@ -1,4 +1,20 @@
 /* You can add global styles to this file, and also import other style files */
+
+/* Variables */
+$border-color: #ddd;
+
+
+
 #toast-container > div {
   opacity:1;
+}
+
+#toast-container {
+  .ngx-toastr {
+    float: right;
+  }
+}
+
+.custom-border {
+  border-color: $border-color !important;
 }
