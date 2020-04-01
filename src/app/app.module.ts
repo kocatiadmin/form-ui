@@ -6,7 +6,7 @@ import { ToastrModule } from "ngx-toastr";
 import { AppRoutingModule } from "./app-routing.module";
 import { AppComponent } from "./app.component";
 import { AgencyLoginComponent } from './login/agency-login/agency-login.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AgencyLayoutComponent } from './layouts/agency-layout/agency-layout.component';
 import { NavbarModule } from './layouts/shared/navbar/navbar.module';
 import { SidebarModule } from './layouts/shared/sidebar/sidebar.module';
@@ -19,8 +19,10 @@ import { SidebarModule } from './layouts/shared/sidebar/sidebar.module';
     AppRoutingModule,
     HttpClientModule,
     FormsModule,
+    ReactiveFormsModule,
     ToastrModule.forRoot({
-      timeOut: 5000
+      timeOut: 5000,
+      positionClass: 'toast-top-right'
     }),
     NavbarModule,
     SidebarModule
